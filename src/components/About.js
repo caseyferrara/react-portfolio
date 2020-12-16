@@ -1,12 +1,16 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import pic from '../images/pic.jpg';
 import { ListGroup, Image, Container, Row, Col } from 'react-bootstrap';
-import { Link, animateScroll as scroll } from 'react-scroll';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import UilHTML5 from '@iconscout/react-unicons/icons/uil-html5';
-import UilCSS from '@iconscout/react-unicons/icons/uil-css3-simple';
-import UilJavascript from '@iconscout/react-unicons/icons/uil-java-script';
-import UilReact from '@iconscout/react-unicons/icons/uil-react';
+import { Link } from 'react-scroll';
+import { Html5 } from '@icons-pack/react-simple-icons';
+import { Css3 } from '@icons-pack/react-simple-icons';
+import { Javascript } from '@icons-pack/react-simple-icons';
+import { ReactJs } from '@icons-pack/react-simple-icons';
+import { Bootstrap } from '@icons-pack/react-simple-icons';
+import { Git } from '@icons-pack/react-simple-icons';
+import { Github } from '@icons-pack/react-simple-icons';
+import { Npm } from '@icons-pack/react-simple-icons';
 import UilArrowCircleDown from '@iconscout/react-unicons/icons/uil-arrow-circle-down';
 
 
@@ -16,23 +20,29 @@ const About = () => {
 	return (
 		<Container id='top' className='about'>
 			<Image
-			className='pic rotate-center'
+			className='pic puff-in-center'
 			src={pic}
 			roundedCircle
 			/>
 			<Row className='justify-content-center'>
 				<Col>
-					<h1 className='puff-in-center'>My name is Casey Ferrara and I am a Web Developer</h1>
+					<h1 className='puff-in-center intro'>My name is Casey Ferrara and I am a Web Developer</h1>
 				</Col>
 			</Row>
 			<hr />
-			<Row className='lang'>
+			<Row>
 				<Col>
 					<ListGroup horizontal className='justify-content-center'>
-						<ListGroup.Item variant='dark'><UilHTML5 size='50' color='#FFF'/></ListGroup.Item>
-						<ListGroup.Item variant='dark'><UilCSS size='50' color='#FFF'/></ListGroup.Item>
-						<ListGroup.Item variant='dark'><UilJavascript size='50' color='#FFF'/></ListGroup.Item>
-						<ListGroup.Item variant='dark'><UilReact size='50' color='#FFF'/></ListGroup.Item>
+						<ListGroup.Item variant='light'><h2>HTML5</h2><Html5 size='50' color='#3b8d99'/></ListGroup.Item>
+						<ListGroup.Item variant='light'><h2>CSS3</h2><Css3 size='50' color='#3b8d99'/></ListGroup.Item>
+						<ListGroup.Item variant='light'><h2>Javascript</h2><Javascript size='50' color='#3b8d99'/></ListGroup.Item>
+						<ListGroup.Item variant='light'><h2>ReactJs</h2><ReactJs size='50' color='#3b8d99'/></ListGroup.Item>
+					</ListGroup>
+					<ListGroup horizontal className='justify-content-center lang-list'>
+						<ListGroup.Item variant='light'><h2>Bootstrap</h2><Bootstrap size='50' color='#3b8d99'/></ListGroup.Item>
+						<ListGroup.Item variant='light'><h2>Git</h2><Git size='50' color='#3b8d99'/></ListGroup.Item>
+						<ListGroup.Item variant='light'><h2>Github</h2><Github size='50' color='#3b8d99'/></ListGroup.Item>
+						<ListGroup.Item variant='light'><h2>NPM</h2><Npm size='50' color='#3b8d99'/></ListGroup.Item>
 					</ListGroup>
 				</Col>
 			</Row>
@@ -44,7 +54,7 @@ const About = () => {
 				offset={-70}
 				duration={500}
 			>
-			<UilArrowCircleDown className='arrow' size='50' color='#FFF' />
+			<UilArrowCircleDown className='arrow' size='50' color='#3b8d99' />
 			</Link>
 		</Container>
 	);

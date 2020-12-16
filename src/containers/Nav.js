@@ -1,13 +1,26 @@
-import { Nav, Navbar } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link, animateScroll as scroll } from 'react-scroll';
 import React from 'react';
-import logo from '../logo.svg'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import logo from '../images/logo.png';
+import { Image, Navbar, Nav } from 'react-bootstrap';
+import { Link } from 'react-scroll';
+import Toggle from '../components/Toggler';
+import { ThemeProvider } from 'styled-components';
+import { GlobalStyles } from '../containers/GlobalStyles';
+import { lightTheme, darkTheme } from '../containers/Theme';
+import { useDarkMode } from '../containers/useDarkMode';
 
 const NavBar = () => {
+
+    const [theme, themeToggler] = useDarkMode();
+
+    const themeMode = theme === 'light' ? lightTheme : darkTheme;
+
 	return (
+		<ThemeProvider theme={themeMode}>
+		<GlobalStyles />
 		<div>
 		<Navbar
+			className='nav-font'
 			bg='dark'
 			variant='dark'
 			fixed='top'
@@ -20,19 +33,16 @@ const NavBar = () => {
 				smooth={true}
 				offset={-70}
 				duration={500}
-					>
-			<Navbar.Brand className='text-light' href='#home'>
-				<img
-				className='rotate-center'
-				alt='Logo'
+				className='text-light bounce-in-left'
+			>
+			<Image
+				className='logo'
 				src={logo}
-				width='45'
-				height='45'
-				/>
-				Casey Ferrara
-			</Navbar.Brand>
+			/>
 			</Link>
-			<Navbar.Toggle aria-controls='responsive-navbar-nav' />
+			<Navbar.Toggle className='toggle' aria-controls='responsive-navbar-nav'>
+
+			</Navbar.Toggle>
 			<Navbar.Collapse id='responsive-navbar-nav'>
 				<Nav>
 					<Link
@@ -42,8 +52,9 @@ const NavBar = () => {
 						smooth={true}
 						offset={-70}
 						duration={500}
+						className='text-light nav-links'
 					>
-						<Nav.Link className='text-light' href='#projects'>Projects</Nav.Link>
+					Projects
 					</Link>
 					<Link
 						activeClass='active'
@@ -52,13 +63,18 @@ const NavBar = () => {
 						smooth={true}
 						offset={-70}
 						duration={500}
+						className='text-light nav-links'
 					>
-					<Nav.Link className='text-light' href='#contact'>Contact</Nav.Link>
+					Contact
 					</Link>
+				</Nav>
+				<Nav className='ml-auto'>
+					<Toggle theme={theme} toggleTheme={themeToggler} />
 				</Nav>
 			</Navbar.Collapse>
 		</Navbar>
 		</div>
+		</ThemeProvider>
 	);
 }
 

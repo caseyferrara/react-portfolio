@@ -1,21 +1,31 @@
-import {ListGroup, Container, Row, Col } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link, animateScroll as scroll } from 'react-scroll';
-import UilGithub from '@iconscout/react-unicons/icons/uil-github';
-import UilLinkedin from '@iconscout/react-unicons/icons/uil-linkedin';
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container, Row, Col } from 'react-bootstrap';
+import { Github } from '@icons-pack/react-simple-icons';
+import { Linkedin } from '@icons-pack/react-simple-icons';
+
 
 const Footer = () => {
 
 	return (
-		<Container className='footer'>
+		<Container fluid className='footer'>
 			<Row>
 				<Col lg={{span: 4, offset: 4}}>
-					<h2 className='footer-text'>Created by Casey Ferrara</h2>
+					<h3 className='footer-text'>Created by Casey Ferrara</h3>
 				</Col>
 				<Col xs={{span: 3.5, offset: 3.5}} lg={{span: 2, offset: 2}} className='social'>
-  						<UilGithub className='footer-links' size='50' color='#FFF'/>
-						<UilLinkedin className='footer-links' size='50' color='#FFF'/>
+  						<a 
+  						href='https://github.com/caseyferrara' 
+  						target='_blank' rel='noreferrer' 
+  						className='contact-link'>
+  							<Github size='50' color='#FFF'/>
+  						</a>
+  						<a 
+  						href='https://www.linkedin.com/in/casey-ferrara-199b6517b/' 
+  						target='_blank' rel='noreferrer' 
+  						className='contact-link'>
+							<Linkedin size='50' color='#FFF'/>
+						</a>
 				</Col>
 			</Row>
 		</Container> 
