@@ -22,6 +22,12 @@
   .lang-group {
     border-radius: 50px;
   }
+  .projects {
+    padding-top: 190px;
+  }
+  .contact {
+    padding-top: 230px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -44,6 +50,12 @@
   width: auto;
   height: 125px;
   box-shadow: 0px 0px 0px 5px #3b8d99;
+  }
+  .projects {
+    padding-top: 50px;
+  }
+  .contact {
+    padding-top: 65px;
   }
 }
 
@@ -140,8 +152,6 @@ hr {
 
 .projects {
   text-align: center;
-  padding-top: 190px;
-  padding-bottom: 20px;
 }
 
 .dropdown {
@@ -150,7 +160,6 @@ hr {
 
 .contact {
   text-align: center;
-  padding-top: 230px;
   padding-bottom: 50px;
 }
 
