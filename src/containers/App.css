@@ -26,10 +26,10 @@
 
 @media screen and (max-width: 600px) {
   h1 {
-    font-size: 40px;
+    font-size: 25px;
   }
   h2 {
-    font-size: 20px;
+    font-size: 15px;
   }
   .card {
     color: white;
