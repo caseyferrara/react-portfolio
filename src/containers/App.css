@@ -11,8 +11,16 @@
   h2 {
     font-size: 20px;
   }
+  .pic {
+  width: auto;
+  height: 250px;
+  box-shadow: 0px 0px 0px 5px #3b8d99;
+}
   .card {
     color: white;
+  }
+  .lang-group {
+    border-radius: 50px;
   }
 }
 
@@ -25,7 +33,17 @@
   }
   .card {
     color: white;
-    width: 25.5em;
+    margin: 0 auto;
+    width: 15em;
+  }
+  .lang-group {
+    border-radius: 50px;
+    margin: 0 auto;
+  }
+  .pic {
+  width: auto;
+  height: 125px;
+  box-shadow: 0px 0px 0px 5px #3b8d99;
   }
 }
 
@@ -97,15 +115,9 @@ hr {
   display: none;
 }
 
-.pic {
-  width: auto;
-  height: 250px;
-  box-shadow: 0px 0px 0px 5px #3b8d99;
-}
-
 .about {
   text-align: center;
-  padding-top: 200px;
+  padding-top: 125px;
   padding-bottom: 15px;
 }
 

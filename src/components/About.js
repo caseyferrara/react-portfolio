@@ -32,13 +32,13 @@ const About = () => {
 			<hr />
 			<Row>
 				<Col>
-					<ListGroup horizontal className='justify-content-center'>
+					<ListGroup horizontal className='justify-content-center lang-group'>
 						<ListGroup.Item variant='light'><h2>HTML5</h2><Html5 size='50' color='#3b8d99'/></ListGroup.Item>
 						<ListGroup.Item variant='light'><h2>CSS3</h2><Css3 size='50' color='#3b8d99'/></ListGroup.Item>
 						<ListGroup.Item variant='light'><h2>Javascript</h2><Javascript size='50' color='#3b8d99'/></ListGroup.Item>
 						<ListGroup.Item variant='light'><h2>ReactJs</h2><ReactJs size='50' color='#3b8d99'/></ListGroup.Item>
 					</ListGroup>
-					<ListGroup horizontal className='justify-content-center lang-list'>
+					<ListGroup horizontal className='justify-content-center lang-group lang-list'>
 						<ListGroup.Item variant='light'><h2>Bootstrap</h2><Bootstrap size='50' color='#3b8d99'/></ListGroup.Item>
 						<ListGroup.Item variant='light'><h2>Git</h2><Git size='50' color='#3b8d99'/></ListGroup.Item>
 						<ListGroup.Item variant='light'><h2>Github</h2><Github size='50' color='#3b8d99'/></ListGroup.Item>
