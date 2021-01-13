@@ -9,8 +9,8 @@ import { Javascript } from '@icons-pack/react-simple-icons';
 import { ReactJs } from '@icons-pack/react-simple-icons';
 import { Bootstrap } from '@icons-pack/react-simple-icons';
 import { Git } from '@icons-pack/react-simple-icons';
-import { Github } from '@icons-pack/react-simple-icons';
 import { Npm } from '@icons-pack/react-simple-icons';
+import { NodeDotJs } from '@icons-pack/react-simple-icons';
 import UilArrowCircleDown from '@iconscout/react-unicons/icons/uil-arrow-circle-down';
 
 
@@ -41,7 +41,7 @@ const About = () => {
 					<ListGroup horizontal className='justify-content-center lang-group lang-list'>
 						<ListGroup.Item variant='light'><h2>Bootstrap</h2><Bootstrap size='50' color='#3b8d99'/></ListGroup.Item>
 						<ListGroup.Item variant='light'><h2>Git</h2><Git size='50' color='#3b8d99'/></ListGroup.Item>
-						<ListGroup.Item variant='light'><h2>Github</h2><Github size='50' color='#3b8d99'/></ListGroup.Item>
+						<ListGroup.Item variant='light'><h2>NodeJs</h2><NodeDotJs size='50' color='#3b8d99'/></ListGroup.Item>
 						<ListGroup.Item variant='light'><h2>NPM</h2><Npm size='50' color='#3b8d99'/></ListGroup.Item>
 					</ListGroup>
 				</Col>
